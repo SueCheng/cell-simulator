@@ -1,10 +1,29 @@
-# Getting Started with Create React App
+# Purpose
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tis project was a code-challenge for a job interview.
+The task is to simulate a cell auto generation game.
+It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Stories
 
-In the project directory, you can run:
+- Initially, there is a chess like board wit all cells dead.
+- User can click a cell to make cell live or dead; when live, it's dark blue, when dead, it's light blue.
+- Use can reset the wole board status to be all dead.
+- Usre can click the `Next Generation` button to make cells update its live status depends on how their neighbours are.
+
+# Rules of next generation
+
+- A Cell with fewer than two live neighbours dies of under-population.
+- A Cell with 2 or 3 live neighbours lives on to the next generation.
+- A Cell with more than 3 live neighbours dies of overcrowding.
+- An empty Cell with exactly 3 live neighbours "comes to life".
+- A Cell who "comes to life" outside the board should wrap at the other side of the
+board.
+
+
+## How to see its working
+
+First, please run `npm i` to install all the dependancy packages into your `node_modules` directory, then you can run:
 
 ### `npm start`
 
@@ -28,19 +47,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
