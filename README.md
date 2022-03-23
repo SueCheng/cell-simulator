@@ -1,6 +1,6 @@
-# Purpose
+# Introduction
 
-Tis project was a code-challenge for a job interview.
+This project is a code-challenge for a job interview.
 The task is to simulate a cell auto generation game.
 It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -20,7 +20,7 @@ It was bootstrapped with [Create React App](https://github.com/facebook/create-r
 - A Cell who "comes to life" outside the board should wrap at the other side of the
   board.
 
-## How to see its working
+## How to see it's working
 
 First, please run `npm i` to install all the dependency packages into your `node_modules` directory, then you can run:
 
