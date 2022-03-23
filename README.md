@@ -8,22 +8,21 @@ It was bootstrapped with [Create React App](https://github.com/facebook/create-r
 
 - Initially, there is a chess like board wit all cells dead.
 - User can click a cell to make cell live or dead; when live, it's dark blue, when dead, it's light blue.
-- Use can reset the wole board status to be all dead.
-- Usre can click the `Next Generation` button to make cells update its live status depends on how their neighbours are.
+- Use can reset the whole board status to be all dead.
+- User can click the `Next Generation` button to make cells update its live status depends on how their neighbors are.
 
 # Rules of next generation
 
-- A Cell with fewer than two live neighbours dies of under-population.
-- A Cell with 2 or 3 live neighbours lives on to the next generation.
-- A Cell with more than 3 live neighbours dies of overcrowding.
-- An empty Cell with exactly 3 live neighbours "comes to life".
+- A Cell with fewer than two live neighbors dies of under-population.
+- A Cell with 2 or 3 live neighbors lives on to the next generation.
+- A Cell with more than 3 live neighbors dies of overcrowding.
+- An empty Cell with exactly 3 live neighbors "comes to life".
 - A Cell who "comes to life" outside the board should wrap at the other side of the
-board.
-
+  board.
 
 ## How to see its working
 
-First, please run `npm i` to install all the dependancy packages into your `node_modules` directory, then you can run:
+First, please run `npm i` to install all the dependency packages into your `node_modules` directory, then you can run:
 
 ### `npm start`
 
